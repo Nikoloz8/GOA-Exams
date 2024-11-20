@@ -1,0 +1,11 @@
+body{
+    background-image: url(./imgs/man-coding-on-laptop-pic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /**/
+    width: 100%;
+    height: 1000px;
+    color: blue;
+    box-sizing: border-box;
+    padding: 100px;
+}

@@ -1,0 +1,52 @@
+div{
+    width: 400px;
+    height: 300px;
+    border: 1px solid red;
+}
+
+.absolute1{
+    position: absolute;
+    top: 8px;
+    left: 500px;
+}
+
+.absolute2{
+    position: absolute;
+    top: 8px;
+    left: 1000px;
+}
+
+.relative1{
+    position: relative;
+    left: 500px;
+    top: 1510px;
+}
+
+.relative2{
+    position: relative;
+    left: 1000px;
+    top: -300px;
+}
+
+.fixed1{
+    position: fixed;
+    left: 500px;
+    top: 0;
+}
+
+.fixed2{
+    position: fixed;
+    left: 1000px;
+    top: 0;
+}
+
+.sticky1{
+    position: sticky;
+    left: 600px;
+}
+
+.sticky2{
+    position: sticky;
+    left: 1200px;
+    top: 0;
+}
