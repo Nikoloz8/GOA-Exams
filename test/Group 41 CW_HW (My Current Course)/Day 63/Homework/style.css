@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 200px;
+}
+
+.Square1{
+    width: 200px;
+    height: 300px;
+    background-color: red;
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    align-items: center;
+    font-family: cursive;
+    font-size: 48px;
+    font-weight: 700;
+    transition: 2s;
+    margin-bottom: 100px;
+}
+
+.Square1:hover{
+    width: 1000px;
+}
+
+.Square2{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    font-family: cursive;
+    font-size: 48px;
+    font-weight: 700;
+    animation: slide 3s ease-in-out infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translate(0);
+    }
+
+    25%{
+        translate: 300px;
+    }
+
+
+    50%{
+        translate: 300px 300px;
+    }
+    
+    75%{
+        translate: 0 300px;
+    }
+
+    100%{
+        translate: 0;
+    }
+}

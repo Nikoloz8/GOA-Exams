@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+}
+
+img{
+    width: 500px;
+    height: 300px;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));  /*ქმნის ანარეკლს*/
+}
+
+p{ 
+    -webkit-text-stroke: 2px #ffffff; /*ასოებს გარედან უმატებს ფენას, ქმნის ჩარჩოს.*/
+    margin-top: 300px;
+}
+
+.draggable {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    -webkit-user-drag: element; /*ეს კიტი საშუალებას გვაძლევს, რომ ელემენტი ავიღოთ და "წავათრიოთ".*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.linear1 ,.linear2, .linear3{
+    width: 500px;
+    height: 500px;
+}
+
+.linear1{
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 0.5));
+} 
+
+.linear2{
+    background: linear-gradient(to left, rgba(255, 0, 255, 0.5), rgba(255, 100, 0, 0.5));
+}
+
+.linear3{
+    background: linear-gradient(to bottom, rgba(0, 255, 0, 0.5), rgba(0, 0, 255, 0.5));
+}
