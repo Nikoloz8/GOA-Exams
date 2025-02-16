@@ -23,13 +23,18 @@ class Book {
         let authorSpan = document.createElement("span")
         authorSpan.innerHTML = "<strong>Author:</strong> " + this.author
 
+        
+
         let button = document.createElement("button")
         button.className = "add"
         button.textContent = "Add"
 
+        let addedCards = document.getElementById("addedCards")
+
         button.onclick = function () {
             button.style.backgroundColor = "red"
             button.textContent = "Added"
+            addedCards.appendChild(card)
         }
 
         info.appendChild(nameSpan)
@@ -64,7 +69,6 @@ searchInput.oninput = function () {
     for (let i = 0; i < cards.length; i++) {
         let title = cards[i].querySelector("span").textContent.toLowerCase()
         let searchText = searchInput.value.toLowerCase()
-
         if (title.indexOf(searchText) !== -1) {
             cards[i].style.display = "block"
         } else {
